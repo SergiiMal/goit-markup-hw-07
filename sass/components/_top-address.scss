@@ -1,0 +1,39 @@
+.top-address {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  list-style: none;
+
+  .top-address__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .top-address__link {
+    display: flex;
+
+    color: $primaryColor;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+
+	.top-address__item:hover .top-icon,
+	.top-address__item:focus .top-icon {
+      fill: $accentColor;
+    }
+	 
+    .top-icon {
+      margin-right: 10px;
+      fill: $primaryColor;
+		}
+		.top-icon:hover,
+		.top-icon:focus {
+        fill: $accentColor;
+      }
+    
+  }
+}
