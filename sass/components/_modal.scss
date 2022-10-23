@@ -1,4 +1,4 @@
-.hero__modal {
+.modal {
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -19,7 +19,7 @@
 	transition: $timingFunction;
 }
 
-.hero__btn-close {
+.modal__btn-close {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -33,7 +33,7 @@
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	transition: $timingFunction;
-}
+
 
 &:hover,
 &:focus {
@@ -41,12 +41,12 @@
 	transition: opacity background-color$timingFunction;
 }
 
-&:hover .icon-close,
-&:focus .icon-close {
+&:hover .modal__icon-close,
+&:focus .modal__icon-close {
 	fill: $accentColor;
 	transition: $timingFunction;
 }
-
-.icon-close {
+}
+.modal__icon-close {
 	fill: #000000;
 }
