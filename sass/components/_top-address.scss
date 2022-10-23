@@ -9,10 +9,12 @@
   letter-spacing: 0.02em;
 
   list-style: none;
-
+ 
+ 
   .top-address__item:not(:last-child) {
     margin-right: 50px;
-  }
+}
+  
   .top-address__link {
     display: flex;
 
@@ -20,20 +22,20 @@
     text-decoration: none;
     transition-property: background-color;
     transition-duration: 250ms;
-
-	.top-address__item:hover .top-icon,
-	.top-address__item:focus .top-icon {
-      fill: $accentColor;
+}
+  .top-address__link:hover,
+    .top-address__link:focus {
+      color: $accentColor;
     }
-	 
+
+ .top-address__link:hover .top-icon,
+ .top-address__link:focus .top-icon {
+   fill: $accentColor;
+ }		 
     .top-icon {
       margin-right: 10px;
-      fill: $primaryColor;
-		}
-		.top-icon:hover,
-		.top-icon:focus {
-        fill: $accentColor;
-      }
-    
-  }
-}
+      fill: $primaryColor;		
+    }
+  
+   }
+
