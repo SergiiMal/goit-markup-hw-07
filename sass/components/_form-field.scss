@@ -4,6 +4,15 @@
 	align-items: start;
 
 	margin-bottom: 10px;
+
+	&::placeholder {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 1.16;
+			letter-spacing: 0.01em;
+	
+			color: rgba(117, 117, 117, 0.5);
+		}
 }
 
 .form-label {
@@ -27,11 +36,20 @@
 	height: 40px;
 
 	padding-left: 42px;
-
+	outline: none;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 
-	color: #000000;
+	color: $titleColor;
+
+	&:focus,
+		&:hover {
+			border-color: #188ce8;
+			transition: $timingFunction;
+		}
+				&:focus~.form-icon {
+					fill: $accentColor;
+				}
 }
 
 .form-icon {
@@ -40,29 +58,6 @@
 	left: 12px;
 	display: inline-block;
 	transform: translateY(20%);
-}
-
-.form-input:focus~.form-icon {
-	fill: $accentColor;
-}
-
-.form-input {
-	outline: none;
-}
-
-.form-input:focus,
-.form-input:hover {
-	border-color: #188ce8;
-	transition: $timingFunction;
-}
-
-.form-field ::placeholder {
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.16;
-	letter-spacing: 0.01em;
-
-	color: rgba(117, 117, 117, 0.5);
 }
 
 .comment {
@@ -82,7 +77,12 @@
 	padding-top: 12px;
 }
 
-.checkbox-input:checked~.icon-check {
+.checkbox-input {
+	margin-left: 12px;
+	appearance: none;
+
+
+&:checked~.icon-check {
 	background-color: $defaultColor;
 	border-radius: 2px;
 	background-image: url(../img/icon-check.svg);
@@ -92,10 +92,11 @@
 	fill: $accentColor;
 }
 
-.checkbox-input:focus~.icon-check,
-.checkbox-input:hover~.icon-check {
+&:focus~.icon-check,
+&:hover~.icon-check {
 	fill: $accentColor;
 	transition: $timingFunction;
+}
 }
 
 .checkbox-label {
@@ -108,11 +109,6 @@
 	color: $primaryColor;
 }
 
-.checkbox-input {
-	margin-left: 12px;
-	appearance: none;
-}
-
 .accept-btn {
 	min-width: 200px;
 	height: 50px;
@@ -122,19 +118,19 @@
 	letter-spacing: 0.06em;
 
 	margin-top: 30px;
-
+	
 	color: $primariBgColor;
 	background: $defaultColor;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
-}
+	border: none;
 
-.accept-btn:hover,
-.accept-btn:focus {
+&:hover,
+&:focus {
 	background-color: $defaultColor;
 	transition:$timingFunction;
 }
-
+}
 .terms {
 	text-decoration: underline;
 	text-underline-offset: 3px;
