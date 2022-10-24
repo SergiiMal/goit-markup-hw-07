@@ -1,6 +1,9 @@
 .top-address {
   display: flex;
   margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   align-items: center;
   justify-content: center;
   font-weight: 500;
@@ -8,8 +11,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  list-style: none;
- 
+  list-style: none;  
+ }
+ .top-address__item{
+  padding: 32px 0;
+ }
  
   .top-address__item:not(:last-child) {
     margin-right: 50px;
@@ -22,20 +28,21 @@
     text-decoration: none;
     transition-property: background-color;
     transition-duration: 250ms;
-}
-  .top-address__link:hover,
-    .top-address__link:focus {
+
+  &:hover,
+    &:focus {
       color: $accentColor;
     }
 
- .top-address__link:hover .top-icon,
- .top-address__link:focus .top-icon {
+ &:hover .top-icon,
+ &:focus .top-icon {
    fill: $accentColor;
- }		 
+ }
+ 	} 
     .top-icon {
       margin-right: 10px;
       fill: $primaryColor;		
     }
   
-   }
+   
 

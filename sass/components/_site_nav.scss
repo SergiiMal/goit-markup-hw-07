@@ -1,16 +1,17 @@
 .site-nav {
 	display: flex;
+	margin: 0;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 
 	cursor: pointer;
-
+}
 	.site-nav__item:not(:last-child) {
 		margin-right: 50px;
 }
-		&,
+		.site-nav,
 		.site-nav__link {
 			text-decoration: none;
 			list-style: none;
@@ -53,8 +54,9 @@
 	&:hover::after {
 		/* opacity: 1; */
 		transform: scaleX(1);
+		
 }
 	
 }
-}
+
 
