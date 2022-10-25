@@ -1,5 +1,6 @@
 @import "./base/fonts";
 @import "./utils/veriables";
+@import "./base/reset";
 @import "./base/normalize.scss";
 @import "./components/page-header";
 @import "./components/logo";
@@ -21,3 +22,6 @@
 @import "./components/address-footer";
 @import "./components/join";
 @import "./components/subscribe";
+
+@import "./components/filter";
+@import "./components/gallery";
