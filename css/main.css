@@ -1083,12 +1083,6 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .address-box {
@@ -1123,11 +1117,13 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .join {
   margin-right: 93px;
-  padding-top: 10px;
 }
 
 .join__title {
@@ -1185,7 +1181,6 @@ summary {
 .subscribe {
   width: 570px;
   margin-left: auto;
-  padding-top: 10px;
 }
 
 .subscribe__text {
