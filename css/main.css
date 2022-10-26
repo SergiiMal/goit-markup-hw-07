@@ -320,7 +320,7 @@ summary {
   text-decoration: none;
   color: #2196f3;
 }
-.logo-span {
+.logo__span {
   color: #000000;
 }
 
@@ -444,6 +444,8 @@ summary {
 }
 
 .border {
+  width: 1600px;
+  margin: auto;
   border-bottom: 1px solid #ececec;
 }
 
@@ -1069,6 +1071,8 @@ summary {
 }
 
 .address-footer {
+  margin: auto;
+  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
@@ -1264,7 +1268,7 @@ summary {
 
 .filter {
   padding-top: 94px;
-  padding-bottom: 34px;
+  padding-bottom: 94px;
 }
 
 .filter .list {
@@ -1339,7 +1343,7 @@ summary {
   margin-right: 0px;
 }
 .gallery-list .item:nth-last-child(-n+3) {
-  margin-bottom: 114px;
+  margin-bottom: 0px;
 }
 
 .card-text {
