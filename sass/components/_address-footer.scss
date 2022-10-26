@@ -6,29 +6,18 @@
 	background: #2f303a;
 		display: flex;
 		align-items: baseline;
+		justify-content: center;
 }
 
-.address-footer__box {
+.address-box {
 	margin-right: 70px;
-}
-.address-footer__logo {
 	
-	padding: 0;
-	margin-bottom: 20px;
+}
 
-		font-family: "Raleway", sans-serif;
-			font-size: 26px;
-			line-height: 1.19;
-			letter-spacing: 0.03em;
-			text-decoration: none;
-			color: $accentColor;
-			}
-
-			.address-footer__logo-span{
-				color: $primariBgColor;
-			}
+			
  .address{
 	padding: 0;
+	padding-top: 20px;
 	list-style: none;
  }
 
