@@ -41,7 +41,10 @@
 	border-radius: 4px;
 
 	color: $titleColor;
-
+&:last-child {
+		padding-left: 16px;
+		padding-top: 12px;
+	}
 	&:focus,
 		&:hover {
 			border-color: #188ce8;
@@ -73,17 +76,14 @@
 	resize: none;
 }
 
-.comment .form-field__input {
-	padding-left: 16px;
-	padding-top: 12px;
-}
 
-.checkbox-input {
+
+.form-order__checkbox-input {
 	margin-left: 12px;
 	appearance: none;
 
-}
-.checkbox-input:checked~.checkbox-icon {
+
+&:checked~.form-order__checkbox-icon {
 	background-color: $defaultColor;
 	border-radius: 2px;
 	background-image: url(../img/icon-check.svg);
@@ -93,15 +93,16 @@
 	background-origin: border-box;	
 	fill: $accentColor;
 }
-
-.checkbox-input:focus~.checkbox-icon,
-.checkbox-input:hover~.checkbox-icon {
+&:focus~.form-order__checkbox-icon,
+&:hover~.form-order__checkbox-icon {
 	fill: $accentColor;
 	transition: $timingFunction;
 }
+}
 
 
-.checkbox-label {
+
+.form-order__checkbox-label {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
@@ -133,7 +134,7 @@
 	transition:$timingFunction;
 }
 }
-.terms {
+.form-order__terms {
 	text-decoration: underline;
 	text-underline-offset: 3px;
 	color: $defaultColor;

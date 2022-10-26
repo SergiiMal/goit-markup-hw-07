@@ -673,6 +673,10 @@ summary {
   border-radius: 4px;
   color: #212121;
 }
+.form-field__input:last-child {
+  padding-left: 16px;
+  padding-top: 12px;
+}
 .form-field__input:focus, .form-field__input:hover {
   border-color: #188ce8;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -703,19 +707,13 @@ summary {
   resize: none;
 }
 
-.comment .form-field__input {
-  padding-left: 16px;
-  padding-top: 12px;
-}
-
-.checkbox-input {
+.form-order__checkbox-input {
   margin-left: 12px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-
-.checkbox-input:checked ~ .checkbox-icon {
+.form-order__checkbox-input:checked ~ .form-order__checkbox-icon {
   background-color: #188ce8;
   border-radius: 2px;
   background-image: url(../img/icon-check.svg);
@@ -725,15 +723,13 @@ summary {
   background-origin: border-box;
   fill: #2196f3;
 }
-
-.checkbox-input:focus ~ .checkbox-icon,
-.checkbox-input:hover ~ .checkbox-icon {
+.form-order__checkbox-input:focus ~ .form-order__checkbox-icon, .form-order__checkbox-input:hover ~ .form-order__checkbox-icon {
   fill: #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-label {
+.form-order__checkbox-label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -762,7 +758,7 @@ summary {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.terms {
+.form-order__terms {
   text-decoration: underline;
   text-underline-offset: 3px;
   color: #188ce8;
