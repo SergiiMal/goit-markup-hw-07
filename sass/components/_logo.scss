@@ -11,12 +11,10 @@
 	text-decoration: none;
 
 	color:$accentColor;
-
-
-	&-span {
-		color: #000000;
 }
-}
-.logo-span--invers{	
+		.logo__span {
+			color: #000000;
+		}
+.logo__span--invers{	
 	color: $primariBgColor;
 }
