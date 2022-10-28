@@ -1,7 +1,9 @@
+@import "./base/normalize.scss";
+@import "./base/reset";
 @import "./base/fonts";
 @import "./utils/veriables";
-@import "./base/reset";
-@import "./base/normalize.scss";
+
+
 
 @import "./components/page-header";
 @import "./components/logo";
