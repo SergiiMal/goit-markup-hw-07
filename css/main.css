@@ -80,7 +80,7 @@ Sections
 body {
   margin: 0;
   /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Roboto", sans-serif, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   /* 2 */
 }
 
@@ -449,7 +449,6 @@ summary {
 }
 
 .border {
-  width: 1600px;
   margin: auto;
   border-bottom: 1px solid #ececec;
 }
@@ -471,7 +470,6 @@ summary {
 .hero .hero__btn {
   min-width: 216px;
   padding: 10px 32px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -1076,8 +1074,6 @@ summary {
 }
 
 .address-footer {
-  margin: auto;
-  width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
