@@ -2,8 +2,8 @@
 @import "./base/reset";
 @import "./base/fonts";
 @import "./utils/veriables";
-
-
+@import "./utils/mixin";
+@import "./utils/breakpoints";
 
 @import "./components/page-header";
 @import "./components/logo";

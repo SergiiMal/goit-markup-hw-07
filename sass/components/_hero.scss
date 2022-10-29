@@ -4,7 +4,8 @@
   padding-bottom: 200px;
 
   .hero__title {
-    margin-bottom: 30px;   
+    margin-bottom: 30px; 
+    @include font(900, 44px, 1.36, 0.06em);  
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
